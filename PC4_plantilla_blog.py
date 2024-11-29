@@ -60,7 +60,7 @@ col1, col2 = st.columns(2)
 # Las columnas creadas se asignan a las variables col1 y col2.
 
 # En la primera columna colocamos la imagen
-col1.image("Imagen1.jpg", caption='Aquí puedes escribir una tiqueta debajo de la imagen', width=300)
+col1.image("Imagen1.jpg", caption='Yop', width=300)
 
 # col1.image("ellie.png", caption='Ellie', width=300): Esta línea está colocando una imagen en la primera columna (col1). 
 # La función image toma como primer argumento la ruta de la imagen que se va a mostrar. 
@@ -131,12 +131,11 @@ st.markdown("<h2 style='text-align: center;'>Explicación de un tema de las clas
 # unsafe_allow_html=True: Este es un argumento opcional en la función markdown.
 
 # Agregamos un video a la aplicación web ( menor a 20 MB)
-st.video("ga.mp4")
 # st.video("ppc-2024-1.mp4"): Esta línea está agregando un video a la aplicación web.
 
 
 # Agregamos un enlace a la página web donde está el video.
-enlace = f'<a href="https://drive.google.com/file/d/1CbCTv4EFV5G5XH7rOpIcPmjKr23Muojs/view?usp=drive_link" target="_blank"><button>Nombre creativo para el botón</button></a>'
+enlace = f'<a href="https://drive.google.com/file/d/1qUPwvrU9Tqgc1gWZfQKvB6hAfzSWew3M/view?usp=drive_link " target="_blank"><button>Mire acá mi proyecto:D</button></a>'
 st.markdown(enlace, unsafe_allow_html=True)
 # f'<a href="URL" target="_blank"><button>Nombre</button></a>':
 # La etiqueta <a> se utiliza para crear un enlace en HTML.
@@ -170,15 +169,15 @@ grafico_seleccionado = sidebar.selectbox('Selecciona un gráfico', graficos)
 
 # Mostramos el gráfico seleccionado
 if grafico_seleccionado == 'Frecuencia de goles':
-    sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+    sidebar.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí la frecuencia de goles del Fiorentina</div>", unsafe_allow_html=True)
     sidebar.image("Frecuencia de goles.png", caption='Frecuencia de goles', width=500)
     pass
 elif grafico_seleccionado == 'Promedio de goles':
-    sidebar.markdown("<div style='text-align: justify'>Texto para la opción 2.</div>", unsafe_allow_html=True)
+    sidebar.markdown("<div style='text-align: justify'>Aquí el promedio de goles del Milan y Sampdoria como visitantes.</div>", unsafe_allow_html=True)
     sidebar.image("Promedio de goles.png", caption='Promedio de goles', width=500)
     pass
 elif grafico_seleccionado == 'Promedio de tarjetas':
-    sidebar.markdown("<div style='text-align: justify'>Texto para la opción 3.</div>", unsafe_allow_html=True)
+    sidebar.markdown("<div style='text-align: justify'>Aquí el promedio de tarjetas rojas en la liga italiana.</div>", unsafe_allow_html=True)
     sidebar.image("Promedio de tarjetas.png", caption='Promedio de tarjetas', width=500)
     pass
 
